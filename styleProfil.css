@@ -1,0 +1,139 @@
+/* General styling*/
+body {
+    background-image: url('Images/fond.png');
+}
+
+h1{
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+}
+
+ul {
+    list-style: none;
+}
+
+.sectionNames{
+    max-width: 40%;
+    text-align: center;
+    font-size: 1.Oem;
+    font-weight: bold;
+    margin: 15px auto;
+    background-color: rgba(114, 114, 114, 0.6);
+    color: white;
+    border-radius: 3px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+/*Pacgum profil*/
+.ProfilSection{
+    margin-bottom: 15px;
+}
+
+.profilePic{
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+}
+
+.profileCardHeader{
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.cardDescription {
+    max-height: 75px;
+    overflow: scroll;
+    font-size: 0.8em;
+}
+
+/*Level*/
+.progress-bar {
+    font-weight: bold;
+    font-size: 1,8em;
+    color:#d8d6d2;
+}
+
+.flagContainer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.modalBtn{
+    display: block;
+    margin: 10px auto;
+    
+}
+
+/*Hobbies*/
+.hobbiesCardHeader{
+    display: flex;
+    justify-content: space-around;
+}
+
+.hobbiesLogo {
+    display: block;
+    width: 22%;
+    height: 22%;
+}
+
+.blockquote-footer {
+    text-align: right;
+}
+
+/*Contact*/
+.submitBtn {
+    display: block;
+    margin: auto;
+}
+
+/*Social Network Icons*/
+.socialNetworkCard {
+    margin: 10px;
+}
+
+.socialNetworkCardBody {
+    display: flex;
+    justify-content: space-around;
+}
+
+/*FOOTER*/
+footer {
+    padding-top: 2px;
+    background: #f8f9fa;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+.signature {
+    margin-bottom: 1px;
+}
+  
+.logowcs {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+@media (min-width: 992px) {
+    body {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    
+    h1 {
+        width: 100%;
+    }
+
+    section {
+        width: 48%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
