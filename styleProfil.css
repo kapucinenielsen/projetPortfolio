@@ -1,88 +1,136 @@
 /* General styling*/
 body {
-    background-image: url('Images/fond.png');
+  background-image: url('https://i.imgur.com/M0cV7vk.png');
+  background-size:100%;
+  background-repeat: repeat;
 }
 
-h1{
+.container-fluid{
+    padding: 0px;
+}
+
+/* First title : 'Work attractive & creative' & 'Who's this human?'  */
+.profilPageTitle {
+    margin: 20px;
+    font-size: 30px;
+    font-weight: bold;
     text-align: center;
     font-family: 'Press Start 2P', cursive;
+    color:#fff;
+    text-shadow: 4px 4px 0 #000;
+    display: block;
 }
 
 ul {
     list-style: none;
 }
 
+/*------------ GENERAL : section + global card ----------------*/
+/*Section*/
+.ProfilSection{
+    margin-bottom: 15px;
+}
+
+/* Sections title */
 .sectionNames{
     max-width: 40%;
     text-align: center;
     font-size: 1.Oem;
     font-weight: bold;
     margin: 15px auto;
-    background-color: rgba(114, 114, 114, 0.6);
+    background-color: #000;
     color: white;
     border-radius: 3px;
     font-family: 'Press Start 2P', cursive;
+    padding:5px;
 }
 
-/*Pacgum profil*/
-.ProfilSection{
-    margin-bottom: 15px;
+.blackLink{ color: black; }
+
+/* Card Blocs as : profil, Contact, Level, Hobbies... */
+.maCarte {
+  display:flex;
+  justify-content:space-around;
+  margin:20px;
+  min-height: 250px;
+  box-shadow: 4px 4px 0 #000;
+  border-radius: 5px;   
+  background-color:#eeeeee;
+  border:1px solid #000;
+  color:#000;
+
 }
 
-.profilePic{
+
+/*------------ BLOC PROFILE ----------------*/
+
+/* Card title */
+.myTitleCard {
+  border-radius:5px;
+  padding:10px;
+  color:#000;
+  font-size:1em;
+  width:100%;
+  font-family: 'Cousine', monospace;
+  border-bottom:1px solid #D9D8D8;
+  text-align:center;
+  display:flex;
+  justify-content:space-around;
+}
+
+/* Bloc Image Profil */
+.profilePic {
     width: 150px;
     height: 150px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 5px;
+    margin:0px 10px -2px;
+    border:10px solid #e1e1e1;
+    object-fit: cover;
 }
 
-.profileCardHeader{
-    text-align: center;
-    font-size: 1.6em;
-    font-weight: bold;
+/* Job/fonction name */
+myName {
+  font-size:1.3em;
+  font-weight:bold;
+  display:block;
+  padding:5px;
+  font-family: 'Cousine', monospace;
 }
 
-.cardDescription {
-    max-height: 75px;
-    overflow: scroll;
-    font-size: 0.8em;
+/* Text card */
+.textCard {
+    height:250px;
+    overflow: auto;
+    font-size: 1em;
+    text-align:justify;
 }
+
+
+/*------------ BLOC progressbar ----------------*/
 
 /*Level*/
-.progress-bar {
-    font-weight: bold;
-    font-size: 1,8em;
-    color:#d8d6d2;
+.progBar {
+
 }
 
+/* flags languages */
 .flagContainer{
     display: flex;
     justify-content: space-around;
 }
 
+/* Button more infos */
 .modalBtn{
     display: block;
     margin: 10px auto;
-    
 }
 
-/*Hobbies*/
-.hobbiesCardHeader{
+/*----------------- Card Hobbies -------------*/
+.hobbiesCardHeader {
     display: flex;
     justify-content: space-around;
 }
 
-.hobbiesLogo {
-    display: block;
-    width: 22%;
-    height: 22%;
-}
-
-.blockquote-footer {
-    text-align: right;
-}
+.blockquote-footer { text-align: right; }
 
 /*Contact*/
 .submitBtn {
@@ -91,41 +139,28 @@ ul {
 }
 
 /*Social Network Icons*/
-.socialNetworkCard {
-    margin: 10px;
-}
+.socialNetworkCard { margin: 5px 10px; }
 
 .socialNetworkCardBody {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
-/*FOOTER*/
-footer {
-    padding-top: 2px;
-    background: #f8f9fa;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-  }
+/*------------- Return arrow ---------------*/
+.fa-arrow-circle-left{ margin: 5px 10px; }
 
-.signature {
-    margin-bottom: 1px;
-}
-  
-.logowcs {
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
-}
+.fa-arrow-circle-left:hover{ color: white; }
 
+.desktopVersion { display: none; }
+
+/*------------ RESPONSIVE ---------------- */
 @media (min-width: 992px) {
     body {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
     }
-    
+
     h1 {
         width: 100%;
     }
@@ -135,5 +170,20 @@ footer {
         margin-top: 10px;
         margin-bottom: 10px;
     }
-}
 
+    .fa-arrow-circle-left{
+        margin: 5px 10px;
+    }
+
+    .desktopVersion {
+        display: block;
+    }
+
+    .desktopVersion:hover {
+        color: white;
+    }
+
+    .mobileVersion {
+        display: none;
+    }
+}
